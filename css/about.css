@@ -1,0 +1,74 @@
+
+/*帮助中心*/
+.centerbox .left h2{
+    text-indent: 15px;
+    font-size: 20px;
+    color: #444444;
+    border-bottom: 1px solid #a0a0a0;
+}
+.centerbox .left dl{
+    font-size: 16px;
+    padding: 10px 10px;
+}
+.centerbox .left dd{
+    text-indent: 16px;
+    font-size: 16px;
+    color: #444444;
+    line-height: 1.8;
+}
+.centerbox .left dd a{
+    text-indent: 16px;
+    font-size: 16px;
+    color: #444444;
+}
+.centerbox .left dt{
+    padding: 5px;
+    font-weight: 600;
+    /*font-size: 16px;*/
+    color: #444444;
+}
+.centerbox .left dt a{
+    color: #444444;
+}
+.centerbox .left{
+    border-radius: 5px;
+    padding: 30px 30px;
+    width: 250px;
+    height: 318px;
+    background: #F3F3F3;
+    float: left;
+    margin-top: 70px;
+}
+
+
+/*商务合作*/
+.centerbox .right{
+    border-radius: 5px;
+    margin-top: 70px;
+    margin-left: 340px;
+    width: 670px;
+    background: #F3F3F3;
+    padding: 30px 30px;
+    margin-bottom: 41px;
+}
+.centerbox .right h2{
+    font-size: 20px;
+    color: #444444;
+    border-bottom: 1px solid #a0a0a0;
+}
+.centerbox .right h3{
+    font-size: 16px;
+    color: #444444;
+    padding: 25px 0 20px;
+}
+.centerbox .right h4{
+    font-weight: 600;
+    font-size: 20px;
+    color: #444444;
+    padding: 18px 0 16px;
+}
+.centerbox .right p{
+    line-height: 1.8;
+    font-size: 16px;
+    color: #444444;
+}

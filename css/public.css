@@ -1,0 +1,155 @@
+.centerbox{
+    width:1000px;
+    margin: 0 auto;
+}
+
+/*头部*/
+header{
+    width:100%;
+    border-bottom: 1px solid #cccccc;
+    box-shadow: -3px -3px 2px -2px #cccccc inset;
+}
+.header{
+    overflow: hidden;
+}
+.logo{
+    float: left;
+    height: 74px;
+}
+.logo img{
+    height: 75%;
+    margin-top: 10px;
+}
+.header ul{
+    overflow: hidden;
+    float: left;
+    margin-left: 65px;
+
+}
+.header ul li{
+    float: left;
+    padding-top: 34px;
+    height: 40px;
+    font-size: 20px;
+    margin-right: 50px;
+}
+.header ul li a{
+    color: #313131;
+}
+.header ul li a:hover{
+    color: #ff413d;
+}
+.h_z{
+    float: right;
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    border: 1px solid #ff413d;
+    border-radius: 2px;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 22px;
+    color:#ff413d;
+    cursor: pointer;
+}
+.h_z a{
+    color:#ff413d;
+}
+.h_z:hover{
+    background: #ff413d;
+}
+.h_z:hover a{
+    color: #fff;
+}
+.h_s{
+    float: right;
+    margin-top:27px;
+    cursor: pointer;
+}
+
+
+
+/*底部*/
+footer{
+    background: #505050;
+}
+.footer{
+    background: #505050;
+    overflow: hidden;
+}
+.footer>ul{
+    padding-top: 40px;
+    overflow: hidden;
+}
+.footer>ul>li{
+    overflow: hidden;
+    float: left;
+    line-height: 22px;
+    margin-right: 20px;
+    color: #a3a3a3;
+}
+.footer>ul>li:nth-child(1) img{
+    width: 160px;
+    height: 160px;
+}
+.footer>ul>li:nth-child(2){
+    width: 130px;
+}
+.footer>ul>li:nth-child(3){
+    width: 100px;
+}
+.footer>ul>li:nth-child(4){
+    width: 140px;
+}
+.footer>ul>li:nth-child(5){
+    width: 150px;
+}
+.footer>ul>li:nth-child(6){
+    width: 170px;
+}
+.footer>ul>li>p{
+    font-size: 14px;
+}
+.footer>ul>li>h5{
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: initial;
+    margin-bottom: 25px;
+}
+.footer>ul>li:nth-child(2) img{
+    margin-bottom: 25px;
+}
+.footer>ul>li:nth-child(4)>ul{
+    float: left;
+}
+.footer>ul>li:nth-child(4)>ul{
+    width: 70px;
+}
+.footer>ul>li>ul>li>a{
+    font-size: 14px;
+    color: #a3a3a3;
+}
+.footer>p{
+    text-align: center;
+    padding-bottom: 20px;
+    margin-top: 60px;
+    color:#a3a3a3;
+    font-size: 14px;
+}
+body{
+    min-width: 1000px;
+}
+/*返回顶部*/
+.backTop{
+    position: fixed;
+    right:3%;
+    top: 110px;
+    display: inline-block;
+    background: url(../img/back.png) no-repeat #e8e8e8 center center;
+    line-height: 999;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/shiyong_quanbu.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../doT.min.js"></script>
+    <script src="../js/shiyong_quanbu.js"></script>
+</head>
+<body>
+<header>
+    <div class="centerbox header">
+        <div class="logo"><img src="../img/logonew.png" alt=""></div>
+        <ul>
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="../play/kuwan-newest.html">酷玩</a></li>
+            <li><a href="../guid/daogou-newest.html">导购</a></li>
+            <li><a href="../use/shiyong_quanbu.html" style=" color: #ff413d;">试用</a></li>
+            <li><a href="../report/tijianbaogao-newest.html">报告</a></li>
+        </ul>
+        <div class="h_z"><a href="../regist.html">注册</a></div>
+        <div class="h_s"><img src="../img/search.png" alt=""></div>
+    </div>
+</header>
+<section>
+    <h1>免费试用</h1>
+    <div class="fenlei1">
+        <h2><a class="light" href="shiyong_quanbu.html">大众试用</a></h2>
+        <h2><a href="shiyong_tiyan.html">体验师专享</a></h2>
+    </div>
+    <div class="fenlei2">
+        <ul>
+            <li><a href="shiyong_quanbu.html">全部</a></li>
+            <li><a class="light1" href="shiyong_shenqing.html">申请中</a></li>
+            <li><a href="shiyong_shiyong.html">试用中</a></li>
+            <li><a href="shiyong_jieshu.html">已结束</a></li>
+        </ul>
+    </div>
+    <div class="section">
+        <div class="centerbox shangpin">
+            <ul id="list"></ul>
+            <script id="sp_list" type="text/x-dot-template">
+                {{~it.sy_sj:value:index}}
+                <li class="sp_list"><a href="../guid/daogou_txt.html">
+                    <div class="sp_pic">
+                        <img src="{{=value.pic[Math.floor(Math.random()*value.pic.length)]}}" alt="">
+                        {{?value.pic_txt==='首发'}}
+                        <span class="sp_pic_sf">{{=value.pic_txt}}</span>
+                        {{??value.pic_txt==='体验师专享'}}
+                        <span class="sp_pic_tiyan">{{=value.pic_txt}}</span>
+                        {{?}}
+                    </div>
+                    <div class="sp_txt">
+                        <h4>{{=value.title}}</h4>
+                        <div>
+                            {{~value.num_arr:val:ind}}
+                            {{?value.type==0}}
+                            <span class="sp_txt_sp0">{{=val}}</span>
+                            {{??value.type==1}}
+                            <span class="sp_txt_sp1">{{=val}}</span>
+                            {{??value.type==2}}
+                            <span class="sp_txt_sp2">{{=val}}</span>
+                            {{?}}
+                            {{~}}
+                        </div>
+                        <p class="sp_sq"><span>{{=value.sq}}</span>申请</p>
+                        {{?value.type==0 && value.num}}
+                        <p class="sp_txt_0">报告数量：{{=value.num}}</p>
+                        {{??value.type==1 && value.num}}
+                        <p class="sp_txt_1">剩余天数{{=value.num}}天</p>
+                        {{??value.type==2}}
+                        <p class="sp_txt_2">查看试用名单</p>
+                        {{?}}
+                    </div>
+                </a></li>
+                {{~}}
+            </script>
+        </div>
+        <div class="gengduo">没有更多了！</div>
+    </div>
+</section>
+<!--返回顶部-->
+<a href="javascript:void(0);" class="backTop">返回顶部</a>
+<footer>
+    <div class="centerbox footer">
+        <ul>
+            <li><img src="../img/code.png" alt=""></li>
+            <li>
+                <img src="../img/logoImg.jpg" alt="">
+                <p>全球酷玩试用导购平台酷·新奇·好玩·品质</p>
+                <p>微信添加"JguoJguo"获取我们的服务。</p>
+
+            </li>
+            <li>
+                <h5>免费试用</h5>
+                <ul>
+                    <li><a href="../help.html">试用流程</a></li>
+                    <li><a href="../help.html">如何提高成功率</a></li>
+                </ul>
+            </li>
+            <li>
+                <h5>友情链接</h5>
+                <ul>
+                    <li><a href="#">智东西</a></li>
+                    <li><a href="#">搜狐IT</a></li>
+                    <li><a href="#">搜狐数码</a></li>
+                    <li><a href="#">凤凰数码</a></li>
+                    <li><a href="#">泡泡网</a></li>
+                    <li><a href="#">ZUK社区</a></li>
+                    <li><a href="#">极客公园</a></li>
+                    <li><a href="#">果库</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">WEIBUSI</a></li>
+                    <li><a href="#">腾讯科技</a></li>
+                    <li><a href="#">凤凰科技</a></li>
+                    <li><a href="#">PConline</a></li>
+                    <li><a href="#">3W咖啡</a></li>
+                    <li><a href="#">亿觅emie</a></li>
+                    <li><a href="#">易迅易启玩</a></li>
+                </ul>
+            </li>
+            <li>
+                <h5>购买攻略</h5>
+                <ul>
+                    <li><a href="#">美亚海淘教程</a></li>
+                    <li><a href="#">日亚海淘教程</a></li>
+                    <li><a href="#">海淘转运攻略</a></li>
+                    <li><a href="#">kickstarter 众筹购买攻略</a></li>
+                    <li><a href="#">indiegogo 众筹购买攻略</a></li>
+                </ul>
+            </li>
+            <li>
+                <h5>厂商合作</h5>
+                <ul>
+                    <li><a href="#">关于极果</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">商务合作：BD@jiguo.com</a></li>
+                    <li><a href="#">CEO邮箱：CEO@jiguo.com</a></li>
+                </ul>
+            </li>
+        </ul>
+        <p>© 2016 极果版权所有</p>
+    </div>
+</footer>
+</body>
+</html>

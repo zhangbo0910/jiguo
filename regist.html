@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/regist.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/regist.js"></script>
+</head>
+<body>
+<header>
+    <div class="centerbox header">
+        <div class="logo"><img src="./img/logonew.png" alt=""></div>
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="./play/kuwan-newest.html">酷玩</a></li>
+            <li><a href="./guid/daogou-newest.html">导购</a></li>
+            <li><a href="./use/shiyong_quanbu.html">试用</a></li>
+            <li><a href="./report/tijianbaogao-newest.html">报告</a></li>
+        </ul>
+        <div class="h_z"><a href="./regist.html">注册</a></div>
+        <div class="h_s"><img src="./img/search.png" alt=""></div>
+    </div>
+</header>
+
+<div class="box">
+    <div class="centerbox">
+        <div class="wrap">
+            <span class="wrap-Zc"></span>
+            <h2>注册极果</h2>
+            <form action="" name="my_f1" class="formZc" onsubmit="return check(this)">
+                <p><input type="text" required="required" placeholder="请输入登录手机号" id="Sj" pattern="^1[3-9][0-9]{9}$" name="tel"></p>
+                <p id="sky2">
+                    <input type="text" required="required" placeholder="请输入图片校验码" name="imgCode">
+                <img src="img/imgCode.jpg" alt="">
+                </p>
+                <p>
+                    <input type="text" required="required" placeholder="请输入4位数字验证码" name="code">
+                    <a href="javascript:void(0)" class="getCode">获取验证码</a>
+                </p>
+                <p><input type="text" required="required" placeholder="请输入用户名"></p>
+                <p><input type="password" required="required" placeholder="请输入新密码" name="psw1"></p>
+                <p><input type="password" required="required" placeholder="确定新密码" name="psw2"></p>
+                <p><button id="submit">立即注册</button></p>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--返回顶部-->
+<a href="javascript:void(0);" class="backTop">返回顶部</a>
+
+
+<footer>
+    <div class="centerbox footer">
+        <ul>
+            <li><img src="./img/code.png" alt=""></li>
+            <li>
+                <img src="./img/logoImg.jpg" alt="">
+                <p>全球酷玩试用导购平台酷·新奇·好玩·品质</p>
+                <p>微信添加"JguoJguo"获取我们的服务。</p>
+
+            </li>
+            <li>
+                <h5>免费试用</h5>
+                <ul>
+                    <li><a href="./help.html">试用流程</a></li>
+                    <li><a href="./help.html">如何提高成功率</a></li>
+                </ul>
+            </li>
+            <li>
+                <h5>友情链接</h5>
+                <ul>
+                    <li><a href="#">智东西</a></li>
+                    <li><a href="#">搜狐IT</a></li>
+                    <li><a href="#">搜狐数码</a></li>
+                    <li><a href="#">凤凰数码</a></li>
+                    <li><a href="#">泡泡网</a></li>
+                    <li><a href="#">ZUK社区</a></li>
+                    <li><a href="#">极客公园</a></li>
+                    <li><a href="#">果库</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">WEIBUSI</a></li>
+                    <li><a href="#">腾讯科技</a></li>
+                    <li><a href="#">凤凰科技</a></li>
+                    <li><a href="#">PConline</a></li>
+                    <li><a href="#">3W咖啡</a></li>
+                    <li><a href="#">亿觅emie</a></li>
+                    <li><a href="#">易迅易启玩</a></li>
+                </ul>
+            </li>
+            <li>
+                <h5>购买攻略</h5>
+                <ul>
+                    <li><a href="#">美亚海淘教程</a></li>
+                    <li><a href="#">日亚海淘教程</a></li>
+                    <li><a href="#">海淘转运攻略</a></li>
+                    <li><a href="#">kickstarter 众筹购买攻略</a></li>
+                    <li><a href="#">indiegogo 众筹购买攻略</a></li>
+                </ul>
+            </li>
+            <li>
+                <h5>厂商合作</h5>
+                <ul>
+                    <li><a href="#">关于极果</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">商务合作：BD@jiguo.com</a></li>
+                    <li><a href="#">CEO邮箱：CEO@jiguo.com</a></li>
+                </ul>
+            </li>
+        </ul>
+        <p>© 2016 极果版权所有</p>
+    </div>
+</footer>
+
+
+</body>
+</html>
